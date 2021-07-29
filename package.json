@@ -1,0 +1,50 @@
+{
+  "name": "my-first-app",
+  "version": "0.0.1",
+  "license": "OSL-3.0",
+  "dependencies": {
+    "@scandipwa/eslint-config": "0.1.25",
+    "@scandipwa/scandipwa": "4.4.0",
+    "@scandipwa/scandipwa-scripts": "2.4.8",
+    "@tilework/mosaic": "0.1.2",
+    "scandipwa-cli": "^0.3.7",
+    "scandipwa-storybook-plugin": "^0.2.0-rc.2"
+  },
+  "scandipwa": {
+    "type": "theme",
+    "locales": {
+      "en_US": true
+    },
+    "parentTheme": "@scandipwa/scandipwa",
+    "extensions": {}
+  },
+  "scripts": {
+    "start": "scandipwa-scripts start",
+    "build": "scandipwa-scripts build",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public",
+    "storybook-docs": "start-storybook --docs --no-manager-cache",
+    "build-storybook-docs": "build-storybook --docs"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "https://40kskudemo.scandipwa.com/",
+  "devDependencies": {
+    "@storybook/addon-actions": "^6.3.6",
+    "@storybook/addon-essentials": "^6.3.6",
+    "@storybook/addon-links": "^6.3.6",
+    "@storybook/node-logger": "^6.3.6",
+    "@storybook/preset-create-react-app": "^3.2.0",
+    "@storybook/react": "^6.3.6"
+  }
+}
