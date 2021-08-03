@@ -1,5 +1,6 @@
 import UiButton from './UiButton';
 import React from 'react';
+
 export default {
     title: 'Ui-Kit/UiButton',
     component: UiButton

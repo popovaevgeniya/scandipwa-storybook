@@ -2,8 +2,6 @@ import PropTypes from 'prop-types';
 import cn from 'classnames';
 import React from 'react';
 
-
-//import '../index.css';
 import styles from './UiButton.module.css';
 
 const UiButton = ({

@@ -1,0 +1,52 @@
+/**
+ * ScandiPWA - Progressive Web App for Magento
+ *
+ * Copyright © Scandiweb, Inc. All rights reserved.
+ * See LICENSE for license details.
+ *
+ * @license OSL-3.0 (Open Software License ("OSL") v. 3.0)
+ * @package scandipwa/base-theme
+ * @link https://github.com/scandipwa/base-theme
+ */
+
+:root {
+    --store-switcher-list-background: #fff;
+    --store-switcher-title-color: #414141;
+}
+
+.StoreSwitcher-Title {
+    cursor: pointer;
+    z-index: 1;
+}
+
+    .StoreSwitcher-Title::after {
+            content: '';
+            position: absolute;
+            right: -18px;
+            top: 7px;
+            width: 10px;
+            height: 6px;
+            background: url(/images/icons/arrow-up.png);
+            transition: transform 200ms ease-in-out;
+            transform: rotate(180deg);
+            will-change: transform;
+        }
+
+.StoreSwitcher-Title_isOpen::after {
+                transform: rotate(0);
+    }
+
+.StoreSwitcher-StoreList {
+    background-color: var(--store-switcher-list-background);
+    border: 1px solid var(--input-border-color);
+    display: none;
+    right: -29px;
+    position: absolute;
+    top: -39px;
+    padding: 64px 10px 0 0;
+    box-shadow: 3px 5px 20px rgba(141, 141, 141, .1);
+}
+
+    .StoreSwitcher-StoreList_isOpen {
+            display: block;
+}

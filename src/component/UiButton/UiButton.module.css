@@ -1,3 +1,15 @@
+:root {
+    --color-white: #dfd;
+    --color-black: #000;
+    --color-gray:  #9c9c9c;
+
+    --font-size-small: 14px;
+    --font-family-main: sans-serif;
+    --font-bold: 600;
+
+    --transition: .4s;
+}
+
 .button {
     min-width: 100px;
     padding: 10px;
