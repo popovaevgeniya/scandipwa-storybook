@@ -8,7 +8,8 @@
     "@scandipwa/scandipwa-scripts": "2.4.8",
     "@tilework/mosaic": "0.1.2",
     "scandipwa-cli": "^0.3.7",
-    "scandipwa-storybook-plugin": "^0.2.0-rc.2"
+    "scandipwa-storybook-plugin": "^0.2.0-rc.2",
+    "storybook-addon-pseudo-states": "^1.0.0"
   },
   "scandipwa": {
     "type": "theme",

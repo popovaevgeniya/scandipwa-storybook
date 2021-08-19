@@ -9,13 +9,17 @@ const UiButton = ({
     onClick,
     disabled,
     theme='dark',
-    classes
+    classes,
+   // pseudo,
+    background
 }) => {
     return (
         <button
             onClick={onClick}
             disabled={disabled}
             className={cn(styles.button, styles[theme], classes)}
+           // pseudo={styles}
+            background={styles[background]}
         >
             {text}
         </button>
@@ -28,6 +32,8 @@ UiButton.propTypes = {
     disabled: PropTypes.bool,
     theme: PropTypes.string,
     classes: PropTypes.string,
+   // pseudo: PropTypes.string
+    background: PropTypes.string
 }
 
 export default UiButton;
