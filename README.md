@@ -50,11 +50,15 @@ scandipwa extension <EXTENSION NAME>
 ## Introduction of a storybook into a project, an example:
 
 npm i scandipwa-storybook-plugin
+
 npm i scandipwa-cli
+
 npx sb init
+
 npm run storybook
 
 Create ./postcss.config.js :
+
 module.exports = {
     plugins: {
         'postcss-flexbugs-fixes': {},
@@ -63,11 +67,13 @@ module.exports = {
         }
     }
 };
+
 and install those plugins (postcss-flexbugs-fixes, autoprefixer).
 
 npm i @storybook/builder-webpack5
 
 Added in .storybook/main.js :
+
 module.exports = {
   core: {
     builder: 'webpack5',
@@ -78,7 +84,9 @@ webpack -v
 and install webpack cli, if it needed
 
 npx sb@next upgrade --prerelease
+
 npm i -D @storybook/manager-webpack5@next
+
 npx sb@next init --builder webpack5
 
 start-storybook -p 6006 -s public
