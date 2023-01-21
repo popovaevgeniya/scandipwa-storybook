@@ -47,7 +47,7 @@ scandipwa extension <EXTENSION NAME>
 > **Note**: to create new extension add `--create` option after the command. This will create a new extension package under `packages` folder.
 
 
-##Introduction of a storybook into a project, an example:
+## Introduction of a storybook into a project, an example:
 
 npm i scandipwa-storybook-plugin
 npm i scandipwa-cli
