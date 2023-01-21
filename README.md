@@ -81,6 +81,7 @@ module.exports = {
 };
 
 webpack -v 
+
 and install webpack cli, if it needed
 
 npx sb@next upgrade --prerelease
